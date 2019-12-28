@@ -1,10 +1,6 @@
 import Vapor
 
-final class HelloController {
-    func hello(_ req: Request) throws -> Stock {
-        Stock(high: 11.2, low: 22.0)
-    }
-}
+
 
 /// Controls basic CRUD operations on `Todo`s.
 final class TodoController {
