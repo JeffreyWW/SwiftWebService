@@ -1,5 +1,11 @@
 import Vapor
 
+final class HelloController {
+    func hello(_ req: Request) throws -> String {
+        return "hello wwww"
+    }
+}
+
 /// Controls basic CRUD operations on `Todo`s.
 final class TodoController {
     /// Returns a list of all `Todo`s.
