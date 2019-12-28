@@ -1,8 +1,8 @@
 import Vapor
 
 final class HelloController {
-    func hello(_ req: Request) throws -> String {
-        return "hello wwww"
+    func hello(_ req: Request) throws -> Stock {
+        Stock(high: 11.2, low: 22.0)
     }
 }
 
