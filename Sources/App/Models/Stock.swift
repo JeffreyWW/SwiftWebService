@@ -4,8 +4,15 @@
 
 import Vapor
 import Foundation
+import FluentMySQL
 
-struct Stock: Content {
+struct Stock: Content, MySQLModel {
+    var id: Int?
+
     var high: Double?
     var low: Double?
+}
+
+extension Stock: Migration {
+
 }
